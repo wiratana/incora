@@ -1,0 +1,185 @@
+a {
+  color: #333;
+}
+
+a:hover {
+  color: #333;
+}
+
+main, .bg-copyright-footer {
+  background: #efeeee;
+}
+
+main .block-gradient, .bg-copyright-footer .block-gradient {
+  background: #090979;
+  background: -webkit-gradient(linear, left top, right top, color-stop(37%, #090979), to(#00d4ff));
+  background: linear-gradient(90deg, #090979 37%, #00d4ff 100%);
+}
+
+.btn {
+  border: none;
+}
+
+.toggle-handle {
+  background: #efeeee;
+}
+
+.scroll-indicator {
+  background: #f6f6f6;
+}
+
+.scroll-indicator .my-progress-bar {
+  background: #b2fcff;
+  background: -webkit-gradient(linear, left top, right top, from(#b2fcff), color-stop(57%, #4066ff), to(#3e64ff));
+  background: linear-gradient(90deg, #b2fcff 0%, #4066ff 57%, #3e64ff 100%);
+}
+
+.theme-neumorphism-flat-primary, .theme-neumorphism-flat-primary-navbar {
+  background: #e8e8e8;
+}
+
+.theme-neumorphism-flat-primary-navbar {
+  -webkit-box-shadow: 4px 4px 8px #c5c5c5, -4px -4px 8px #ffffff;
+          box-shadow: 4px 4px 8px #c5c5c5, -4px -4px 8px #ffffff;
+}
+
+.theme-neumorphism-flat-secondary {
+  background: #f2f2f2;
+}
+
+.theme-neumorphism-flat-secondary-block {
+  -webkit-box-shadow: 10px 10px 15px #c2c2c2,  -10px -10px 15px #ffffff;
+          box-shadow: 10px 10px 15px #c2c2c2,  -10px -10px 15px #ffffff;
+}
+
+.theme-neumorphism-flat-secondary-block-only-dark {
+  background: #1A1A2E;
+  -webkit-box-shadow: 16px 16px 32px #0a0a12,  -16px -16px 32px #2a2a4a;
+          box-shadow: 16px 16px 32px #0a0a12,  -16px -16px 32px #2a2a4a;
+  color: #fff;
+}
+
+.theme-neumorphism-convex-primary, .theme-neumorphism-convex-primary-navbar, .theme-neumorphism-convex-primary-block, .theme-neumorphism-convex-primary-btn {
+  background: linear-gradient(145deg, #fffafa, #d8d3d3);
+}
+
+.theme-neumorphism-convex-primary-navbar {
+  -webkit-box-shadow: 4px 4px 8px #c3c3c3,  -4px -4px 8px #ffffff;
+          box-shadow: 4px 4px 8px #c3c3c3,  -4px -4px 8px #ffffff;
+}
+
+.theme-neumorphism-convex-primary-block {
+  -webkit-box-shadow: 15px 15px 25px #cac5c5,  -15px -15px 25px #ffffff;
+          box-shadow: 15px 15px 25px #cac5c5,  -15px -15px 25px #ffffff;
+}
+
+.theme-neumorphism-convex-primary, .theme-neumorphism-convex-primary-navbar, .theme-neumorphism-convex-primary-block, .theme-neumorphism-convex-primary-btn {
+  background: linear-gradient(145deg, #ffffff, #dadada);
+}
+
+.theme-neumorphism-convex-primary-btn {
+  -webkit-box-shadow: 5px 5px 6px #cecece,  -5px -5px 6px #ffffff;
+          box-shadow: 5px 5px 6px #cecece,  -5px -5px 6px #ffffff;
+}
+
+.theme-neumorphism-pressed-secondary, .theme-neumorphism-flat-secondary-block, .theme-neumorphism-pressed-secondary-block, .theme-neumorphism-pressed-secondary-block-data {
+  background: #efeeee;
+}
+
+.theme-neumorphism-pressed-secondary-block {
+  -webkit-box-shadow: inset 6px 6px 12px #cccccc,  inset -6px -6px 12px #ffffff;
+          box-shadow: inset 6px 6px 12px #cccccc,  inset -6px -6px 12px #ffffff;
+}
+
+.theme-neumorphism-pressed-secondary-block-data {
+  -webkit-box-shadow: inset 5px 5px 9px #bcbcbc,  inset -5px -5px 9px #ffffff;
+          box-shadow: inset 5px 5px 9px #bcbcbc,  inset -5px -5px 9px #ffffff;
+}
+
+.costume-swiper-button {
+  color: #fff;
+  background: #090979;
+}
+
+.bg-gallery-footer {
+  background: #050505;
+}
+
+.bg-navbar {
+  background: #f2f2f2;
+}
+
+.navbar-brand {
+  border: 2px solid #3e64ff;
+  padding: 5px 10px;
+  color: #3e64ff;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.navbar-brand:hover {
+  border-color: transparent;
+  background: #3e64ff;
+  color: #f2f2f2;
+}
+
+.nav-link:hover {
+  border-radius: 10px;
+  background: #3e64ff;
+  color: #f2f2f2;
+}
+
+.nav-link::after {
+  background-color: #3e64ff;
+}
+
+h1, h2, h3, .scroll, .btn {
+  color: #3e64ff;
+}
+
+#hero .bg-hero {
+  background: #f2f2f2;
+}
+
+#data .bg-data {
+  background: #f2f2f2;
+}
+
+#data .box-icon {
+  background: linear-gradient(145deg, #dadada, #ffffff);
+  -webkit-box-shadow: 11px 11px 22px #a9a9a9,  -11px -11px 22px #ffffff;
+          box-shadow: 11px 11px 22px #a9a9a9,  -11px -11px 22px #ffffff;
+}
+
+#tips .bg-tips {
+  background: #f2f2f2;
+}
+
+#news .bg-news {
+  background: #f2f2f2;
+}
+
+#socialMedia .bg-social-media {
+  background: #f2f2f2;
+}
+
+#about .bg-about {
+  background: #f2f2f2;
+}
+
+footer {
+  background: #1A1A2E;
+  color: #fff;
+}
+
+.label-date {
+  background: #090979;
+  background: -webkit-gradient(linear, left top, right top, color-stop(37%, #090979), to(#00d4ff));
+  background: linear-gradient(90deg, #090979 37%, #00d4ff 100%);
+  color: #fff;
+}
+
+.btn-neumorphism {
+  color: #090979;
+}
+/*# sourceMappingURL=light-mode.css.map */

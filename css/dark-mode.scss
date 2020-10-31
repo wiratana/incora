@@ -1,0 +1,209 @@
+$base-bg-primary: #16213e;
+$base-bg-secodary: #1A1A2E;
+$base-font-color: #f2f2f2;
+$base-shadow-primary:#c5c5c5;
+$base-shadow-secondary:#ffffff;
+
+[data-theme="dark"] main, .bg-copyright-footer{
+    background: $base-bg-secodary !important;
+    color: $base-font-color !important;
+}
+
+[data-theme="dark"] .block-gradient{
+    background: rgb(253,29,29) !important;
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,69,145,1) 45%) !important;
+}
+
+[data-theme="dark"] a{
+    color: $base-font-color !important;
+}
+
+[data-theme="dark"] a:hover {
+    color: $base-font-color !important;
+}
+
+[data-theme="dark"] .theme-navbar{
+    color: $base-font-color !important;
+}
+
+[data-theme="dark"] .theme-neumorphism-flat{    
+    
+    &-primary{
+        background: $base-bg-primary;
+        color: $base-font-color;
+
+        &-navbar{
+            @extend .theme-neumorphism-flat-primary;
+            box-shadow:  4px 4px 8px #090d19, 
+                        -4px -4px 8px #233563;
+        }
+    }
+
+    &-secondary{
+        background: $base-bg-secodary;
+
+        &-block{
+            @extend .theme-neumorphism-pressed-secondary;
+            box-shadow:  7px 7px 10px #0a0a12, 
+                        -7px -7px 10px #2a2a4a;
+        }
+    }
+
+}
+
+[data-theme="dark"] .theme-neumorphism-convex{
+    
+    &-primary{
+        background: linear-gradient(145deg, #182342, #141e38);
+
+        &-navbar{
+            @extend .theme-neumorphism-convex-primary;
+            box-shadow:  4px 4px 8px #090d19, 
+                        -4px -4px 8px #233563;
+        }
+    }
+
+}
+
+[data-theme="dark"] .theme-neumorphism-pressed{
+    
+    &-secondary{
+        background: $base-bg-secodary;
+
+        &-block{
+            @extend .theme-neumorphism-pressed-secondary;
+            box-shadow: inset 5px 5px 8px #0a0a12, 
+                        inset -5px -5px 8px #2a2a4a;
+
+        }
+    }
+}
+
+[data-theme="dark"] .theme-neumorphism-pressed{
+    
+    &-secondary{
+        background: $base-bg-secodary;
+
+        &-block{
+            @extend .theme-neumorphism-pressed-secondary;
+            box-shadow: inset 15px 15px 11px #0a0a12, 
+                        inset -15px -15px 11px #2a2a4a;
+        }
+
+        &-block-data{
+            @extend .theme-neumorphism-pressed-secondary;
+            box-shadow: inset 5px 5px 6px #0a0a12, 
+                        inset -5px -5px 6px #2a2a4a;
+        }
+    }
+}
+
+[data-theme="dark"] .scroll-indicator{
+    background: #ffbaea;
+
+    .my-progress-bar{
+        background: rgb(253,29,29);
+        background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,69,145,1) 45%);
+    }
+}
+
+[data-theme="dark"] .costume-swiper-button{
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,69,145,1) 45%);
+}
+
+[data-theme="dark"] .bg-gallery-footer{
+    background: rgb(253,29,29);
+}
+
+[data-theme="dark"] main #hero h1{
+    color: #fc90e3;
+}
+
+
+[data-theme="dark"] .bg-navbar{
+    background: $base-bg-secodary;
+}
+
+[data-theme="dark"] .navbar-brand{
+    border: 2px solid #fc90e3;
+    padding: 5px 10px;
+    color: #fc90e3 !important;
+}
+
+[data-theme="dark"] .nav-link::after{
+    background-color: #fc90e3;
+}
+
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] h3, [data-theme="dark"] .scroll, [data-theme="dark"] .btn{
+    color: #fc90e3 !important;
+}
+
+[data-theme="dark"] #hero {
+
+    .bg-hero{
+        background:$base-bg-secodary;
+    }
+}
+
+[data-theme="dark"] #data{
+    .bg-data{
+        background:$base-bg-secodary
+    }
+}
+
+[data-theme="dark"] #data{
+    .bg-data{
+        background: $base-bg-secodary;
+    }
+
+    .box-icon{
+        background: linear-gradient(145deg, #171729, #1c1c31);
+        box-shadow:  11px 11px 14px #0a0a12, 
+             -11px -11px 14px #2a2a4a;
+    }
+
+}
+
+[data-theme="dark"] #tips{
+    .bg-tips{
+        background: $base-bg-secodary;
+    }
+}
+
+[data-theme="dark"] #news{
+    .bg-news{
+        background: $base-bg-secodary;
+    }
+}
+
+[data-theme="dark"] #socialMedia{
+    .bg-social-media{
+        background: $base-bg-secodary;
+    }
+}
+
+[data-theme="dark"] #about{
+    .bg-about{
+        background: $base-bg-secodary;
+    }
+}
+
+
+[data-theme="dark"] .label-date{
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,69,145,1) 45%);
+    color: #fff;
+}
+
+[data-theme="dark"] .navbar-brand:hover{
+    border-color: transparent;
+    background: #fc90e3;
+    color: #f2f2f2;
+}
+
+[data-theme="dark"] .nav-link:hover{
+    border-radius: 10px;
+    background: #fc90e3;
+    color: #f2f2f2;
+}

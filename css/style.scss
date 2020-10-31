@@ -1,0 +1,257 @@
+// global
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1, h2, h3{
+    font-weight: bold;
+}
+
+// global end
+
+
+// navbar start
+
+header {
+
+    .navbar{
+        padding: 20px 0;
+
+        .navbar-brand{
+            font-weight: 700;
+        }
+
+        .nav-item + .nav-item{
+            margin-right: 10px;
+        }
+
+        .nav-link{
+            transition: .7s;
+            position: relative;
+            text-decoration: none;
+        }
+        
+        .nav-link:hover .nav-link::after{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 3px;
+        }
+    }
+    .navbar-toggler{
+        border-radius: 0px;
+        border: none;
+    }
+    .scroll-indicator{
+        .my-progress-bar{
+            height: 10px;
+            width: 0%;
+        }
+    }
+}
+
+.neumorphism-radius{
+    border-radius: 10px;
+}
+
+.block-divider{
+    height: 10000px;
+}
+// navbar end
+
+
+// hero
+#hero{    
+    h1{
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+    .block-container{
+        padding:  40px;
+    }
+
+    .block-container-without-y-padding{
+        padding: 0px 40px;
+    }    
+
+    .description{
+        font-weight: 300;
+    }
+
+    .sub-head{
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .scroll-icon{
+        font-size: 28px;
+    } 
+    
+    .btn{
+        margin-top: 20px;
+    }
+
+}
+// hero end
+
+// data
+#data{
+    .box-icon{
+        padding: 10px;
+        
+        .core{
+            display: block;
+            width: 30px;
+            height: 30px;
+
+            &-orange{
+                @extend .core;
+                background: linear-gradient(145deg, #ffd600, #e6b400);
+            }
+
+            &-green{
+                @extend .core;
+                background: linear-gradient(145deg, #64ff4c, #54e640);
+            }
+
+            &-red{
+                @extend .core;
+                background: linear-gradient(145deg, #ff6d6d, #e65c5c);
+            }
+
+            &-dark{
+                @extend .core;                
+                background: linear-gradient(90deg, rgba(6,0,121,1) 0%, rgba(0,0,0,1) 100%);
+            }
+        }
+    }
+    .position-out-of-the-box{
+        top: -15px;
+        left: -15px;
+    }
+    .data-marker{
+        .core-label{
+            width: 10px;
+            height: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    }
+    .count{
+        font-size: 30px;
+        span{
+            font-size: 20px;
+            margin-left: 5px;
+        }
+    }
+    .label{
+        color: #fff;
+        font-weight: reguler;
+        &-orange{
+            @extend .label;
+            background: linear-gradient(145deg, #ffd600, #e6b400);
+        }
+
+        &-green{
+            @extend .label;
+            background: linear-gradient(145deg, #64ff4c, #54e640);
+        }
+
+        &-red{
+            @extend .label;
+            background: linear-gradient(145deg, #ff6d6d, #e65c5c);
+        }
+
+        &-dark{
+            @extend .label;
+            background: linear-gradient(90deg, rgba(6,0,121,1) 0%, rgba(0,0,0,1) 100%);
+        }
+    }
+}
+// data end
+
+//tips
+.tips-swiper{
+    height: 350px;
+}
+
+//tips end
+
+@each $breakpoint, $size in (sm, 576), (md, 768), (lg, 992), (xl, 1200) {
+    @media screen and (min-width: #{$size} + px) {
+        @for $i from 1 to 5 {
+            .w-#{$breakpoint}-#{$i} {
+                width: $i * 25%;
+            }
+        }
+    }
+}
+
+// margin pading top
+.padding-top-for-container{
+    padding-top: 100px;
+}
+
+.margin-divider{
+    margin-top: 50px;
+}
+
+// animate
+// .animated {
+//     -webkit-animation-duration: 1s;
+//     animation-duration: 1s;
+//     -webkit-animation-fill-mode: both;
+//     animation-fill-mode: both;
+//     -webkit-animation-timing-function: ease-in-out;
+//     animation-timing-function: ease-in-out;
+//     animation-iteration-count: infinite;
+//     -webkit-amation-iteration-count: infinite
+// }
+
+.block-data{
+    padding: 10px;
+}
+
+.costume-swiper-button {
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#tips{
+    .swiper-container{
+        width: 100%;        
+    }
+}
+
+#news{
+    .social-media-list{
+        a {
+            margin-right: 10px;
+            i{
+                font-size: 50px;
+            }
+        }
+    } 
+}
+
+#about{
+    .text-container{
+        ul{
+            list-style-type: none;
+        }
+    }
+}
+
+.label-date{
+    padding: 0 5px;
+    border-radius: 10px;
+}
+
+.border-button{
+    border: 3px solid #fff;
+}

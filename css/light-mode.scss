@@ -1,0 +1,226 @@
+$base-bg-primary: #e8e8e8;
+$base-bg-secodary: #efeeee;
+$base-font-color: #333;
+$base-shadow-primary:#c5c5c5;
+$base-shadow-secondary:#ffffff;
+
+$blue-theme-primary: #b2fcff;
+$blue-theme-secondary: #5edfff;
+$blue-theme-tertiary: #3e64ff;
+
+a{
+    color: $base-font-color;
+}
+
+a:hover{
+    color: $base-font-color;
+}
+
+main, .bg-copyright-footer{
+    background: $base-bg-secodary;
+
+    .block-gradient{
+        background: rgb(9,9,121);
+        background: linear-gradient(90deg, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 100%);
+    }
+}
+
+.btn{
+    border: none;
+}
+
+.toggle-handle{
+    background: $base-bg-secodary;
+}
+
+.scroll-indicator{
+    background: #f6f6f6;
+
+    .my-progress-bar{
+        background: rgb(178,252,255);
+        background: linear-gradient(90deg, rgba(178,252,255,1) 0%, rgba(64,102,255,1) 57%, rgba(62,100,255,1) 100%);
+    }
+}
+
+.theme-neumorphism-flat{
+
+    &-primary{
+        background: $base-bg-primary;
+
+        &-navbar{
+            @extend .theme-neumorphism-flat-primary;
+            box-shadow:  4px 4px 8px $base-shadow-primary, 
+                        -4px -4px 8px $base-shadow-secondary;
+        }
+    }
+
+    &-secondary{
+        background: #f2f2f2;
+
+        &-block{
+            @extend .theme-neumorphism-pressed-secondary;
+            box-shadow:  10px 10px 15px #c2c2c2, 
+                -10px -10px 15px #ffffff;
+        }
+
+        &-block-only-dark{
+            background: #1A1A2E;
+            box-shadow:  16px 16px 32px #0a0a12, 
+                        -16px -16px 32px #2a2a4a;
+            color: #fff;
+        }
+
+    }
+    
+}
+
+.theme-neumorphism-convex{
+
+    &-primary{
+        background: linear-gradient(145deg, #fffafa, #d8d3d3);
+
+        &-navbar{
+            @extend .theme-neumorphism-convex-primary;
+            box-shadow:  4px 4px 8px #c3c3c3, 
+                        -4px -4px 8px #ffffff
+        }
+
+        &-block{
+            @extend .theme-neumorphism-convex-primary;
+            box-shadow:  15px 15px 25px #cac5c5, 
+             -15px -15px 25px #ffffff;
+        }
+
+    }    
+    
+    &-primary{
+        background: linear-gradient(145deg, #ffffff, #dadada);
+
+        &-btn{
+            @extend .theme-neumorphism-convex-primary;
+            box-shadow:  5px 5px 6px #cecece, 
+                        -5px -5px 6px #ffffff;
+        }
+    }
+}
+
+
+.theme-neumorphism-pressed{
+    
+    &-secondary{
+        background: $base-bg-secodary;
+
+        &-block{
+            @extend .theme-neumorphism-pressed-secondary;
+            box-shadow: inset 6px 6px 12px #cccccc, 
+                        inset -6px -6px 12px #ffffff;
+        }
+
+        &-block-data{
+            @extend .theme-neumorphism-pressed-secondary;
+            box-shadow: inset 5px 5px 9px #bcbcbc, 
+                        inset -5px -5px 9px #ffffff;
+        }
+    }
+}
+
+.costume-swiper-button{
+    color: #fff;
+    background: rgb(9,9,121);
+    // background: linear-gradient(90deg, rgba(9,9,121,1) 60%, rgba(0,212,255,1) 100%);
+
+}
+
+.bg-gallery-footer{
+    background: rgb(5, 5, 5);
+}
+
+.bg-navbar{
+    background: #f2f2f2 ;
+}
+
+.navbar-brand{
+    border: 2px solid $blue-theme-tertiary;
+    padding: 5px 10px;
+    color:$blue-theme-tertiary;
+    transition: .7s;
+}
+
+.navbar-brand:hover{
+    border-color: transparent;
+    background: $blue-theme-tertiary;
+    color: #f2f2f2;
+}
+
+.nav-link:hover{
+    border-radius: 10px;
+    background: $blue-theme-tertiary;
+    color: #f2f2f2;
+}
+
+.nav-link::after{
+    background-color: $blue-theme-tertiary;
+}
+
+h1, h2, h3, .scroll, .btn{
+    color: $blue-theme-tertiary;
+}
+
+#hero {
+    .bg-hero{
+        background: #f2f2f2;
+    }
+
+}
+
+#data{
+    .bg-data{
+        background:#f2f2f2;
+    }
+
+    .box-icon{
+        background: linear-gradient(145deg, #dadada, #ffffff);
+        box-shadow:  11px 11px 22px #a9a9a9, 
+                    -11px -11px 22px #ffffff;
+    }
+
+}
+
+#tips{
+    .bg-tips{
+        background: #f2f2f2;
+    }
+}
+
+#news{
+    .bg-news{
+        background: #f2f2f2;
+    }
+}
+
+#socialMedia{
+    .bg-social-media{
+        background: #f2f2f2;
+    }
+}
+
+#about{
+    .bg-about{
+        background: #f2f2f2;
+    }
+}
+
+footer{
+    background: #1A1A2E;
+    color: #fff;
+}
+
+.label-date{
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(9,9,121,1) 37%, rgba(0,212,255,1) 100%);
+    color: #fff;
+}
+
+.btn-neumorphism{
+    color: rgb(9,9,121);
+}
